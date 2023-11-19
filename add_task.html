@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Task | Join</title>
+
+    <script src="js/storage.js"></script>
+    <script src="js/include.js"></script>
+    <script src="js/summary_script.js"></script>
+    <script src="js/svg.js"></script>
+    <script src="js/templates.js"></script>
+    <script src="js/main_login.js"></script>
+    <script src="js/add_task.js"></script>
+    <script src="js/contacts.js"></script>
+    <script src="js/board.js"></script>
+    <link rel="stylesheet" href="css/summary_style.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/add_task.css">
+    <link rel="stylesheet" href="assets/fonts/fonts.css">
+    <link rel="icon" type="image/x-icon" href="img/joinlogo.png">
+</head>
+
+<body onload="includeTemplates(), main()" class="addtaskpage">
+    <div class="main-content">
+        <div class="sidebar" w3-include-html="templates/sidebar.html">
+        </div>
+        <div class="middle">
+            <div class="header" w3-include-html="templates/header.html">
+            </div>
+            <div class="includeTaskForm" w3-include-html="templates/task_form2.html"></div>
+        </div>
+    </div>
+</body>
+
+</html>
